@@ -1,0 +1,56 @@
+*{margin: 0; padding: 0}
+@import "fonts.scss";
+$font: 'FontAwesome'; 
+$black: #000000;
+$yellow: #E5C796;
+$red :#fb0404;
+$blue: #172b4d;
+body {
+    box-sizing: border-box;
+    color: #172b4d;
+    padding: 0 !important;  
+    font-size: 14px;  
+    line-height: 1.4;  
+    transition: .3s all; 
+    position: relative;
+    font-weight: normal;
+    font-family: 'Roboto';
+    h1, h2, h3, h4, h5, h6, p, label, ul, li, .card, a {  
+        text-decoration: none !important;        
+        transition: .3s all;   
+        margin-bottom: 0;  
+        outline: none !important;    
+    }    
+    a { 
+        transition: .3s all !important; 
+        color: #000000;   
+        &:hover {
+            color: $yellow;       
+        }  
+    } 
+    ul {    
+    	padding: 0;   
+    	margin: 0;  
+    }   
+    input, button {    
+    	outline: none !important; 
+    	box-shadow: none; 
+    	transition: .3s all; 
+    }
+    .slick-slide { 
+    	height: auto;  
+        img {
+            display: inline;
+        }
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+    } 
+    img {
+        max-width: 100%;
+    }
+    .slick-slider {
+        margin-bottom: 0;
+    }
+}
